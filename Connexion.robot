@@ -12,7 +12,7 @@ ${HOME CONTENT}     css=main div
 ${ERROR ID}     css=.login-card p
 
 *** Test Cases ***
-Connexion réussi
+Connexion_reussi
     Open Browser     ${LOGIN URL}     ${BROWSER}
     Maximize Browser Window
     Click Element     ${ID INPUT}
@@ -23,7 +23,7 @@ Connexion réussi
     Wait Until Element Contains    ${HOME CONTENT}    home    timeout=1s
     Close Browser
 
-Identifiant inexistant
+Identifiant_inexistant
     Open Browser     ${LOGIN URL}     ${BROWSER}
     Maximize Browser Window
     Click Element     ${ID INPUT}
@@ -34,7 +34,7 @@ Identifiant inexistant
     Wait Until Element Contains    ${ERROR ID}    Email ou mot de passe incorrect    timeout=1s
     Close Browser
 
-Mot de passe faux
+Mot_de_passe_incorrect
     Open Browser     ${LOGIN URL}     ${BROWSER}
     Maximize Browser Window
     Click Element     ${ID INPUT}
